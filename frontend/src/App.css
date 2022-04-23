@@ -6,7 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+a{
+  color: inherit;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

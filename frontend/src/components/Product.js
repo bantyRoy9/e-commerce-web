@@ -24,9 +24,9 @@ const Product = () => {
         }else if(sortName === 'Price: High to Low'){
             setSort('sort=-price')
         }else if(sortName === 'Newest Arrivals'){
-            setSort('sort=created')
-        }else if(sortName === 'Oldest Arrivals'){
             setSort('sort=-created')
+        }else if(sortName === 'Oldest Arrivals'){
+            setSort('sort=created')
         }
         dataCollector();
     }
@@ -34,6 +34,7 @@ const Product = () => {
         dataCollector();
         console.log(sort);
     }, [])
+    
     return (
         <>
             <div className='drop-down'>
@@ -64,9 +65,7 @@ const Product = () => {
 
                                     <p className="card-text" style={{height:"50px" ,overflow: "hidden"}} > {item.description} </p>
                                     <h5 className="card-title">$ {item.price} </h5>
-                                    <a href="#" className="btn btn-success btn-sm">Add to Card</a>
-                                    <a href="#" className="btn btn-danger btn-sm delete-button">Delete</a>
-
+                                  
                                 </div>
                             </div>
                         </div>

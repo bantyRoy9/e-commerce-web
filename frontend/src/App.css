@@ -90,3 +90,10 @@ margin-left: 1rem;
 
  z-index: 5;
 } */
+.textDesc{
+  outline: none;
+  border: none;
+}
+.textDesc:focus{
+  outline: none;
+}

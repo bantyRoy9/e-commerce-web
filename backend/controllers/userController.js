@@ -24,8 +24,9 @@ exports.postSignup=async(req,res)=>{
         res.cookie('jwt',token,{httpOnly:true,maxAge:maxAge*1000});
         res.status(201).json({
             status:'success',
-            message:'user Login Successful'
-        });
+            message:'user Login Successful',
+        
+            });
     }
     catch(err){
        const errors= handleErrors(err);

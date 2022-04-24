@@ -17,7 +17,10 @@ const productSchema=new mongoose.Schema({
         type:String,
         default:'prduct.jpeg'
     },
-    created: Date
+    created:{
+        type:Date,
+        default: new Date(Date.now())
+    }
 })
 
 

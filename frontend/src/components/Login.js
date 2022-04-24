@@ -12,11 +12,13 @@ const Login = () => {
             e.preventDefault();
             const data = await axios.post('http://localhost:4000/login', { email, password })
             const { status, message } = data.data;
+            console.log(data.data);
             setAlert({ type: status, msg: message })
             setTimeout(() => {
                 setAlert(false)
                 navigate('/')
             }, 2000);
+            localStorage.setItem('status',JSON.stringify(data))
         } catch (err) {
             console.log(err.response);
             setAlert({ type: 'error', msg: 'failed login' })

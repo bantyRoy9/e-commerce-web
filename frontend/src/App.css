@@ -97,3 +97,20 @@ margin-left: 1rem;
 .textDesc:focus{
   outline: none;
 }
+.homebtn{
+  position: absolute;
+  left: 38%;
+  padding: 10px;
+  border-radius: 10px;
+  top: 40%;
+  background: whitesmoke;
+  color: black;
+  box-shadow: 2px 2px 2px 2px  ;
+  border: 1px solid white;
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+.homebtn:hover{
+  color: #020b0d;
+}
